@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://project.cp5924giqt0o.ap-northeast-2.rds.amazonaws.com:3306/pjt_happy?characterEncoding=UTF-8
+    username: admin
+    password: Password1!
+
+mybatis:
+  mapper-locations: mapper/**/*.xml
+
+server:
+  port: 8051
+  servlet:
+    context-path: /findbang
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
